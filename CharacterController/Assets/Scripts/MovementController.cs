@@ -25,13 +25,14 @@ public class MovementController : RuleSystem
     public float gravityForce = -9.81f;
 
     public Transform orginPoint;
-
+    
     private CharacterController controller;
     private Animator animator;
     private Vector3 playerMoveDirection;
     private float movementX;
     private float movementY;
     private float rotationY;
+    private float rotationX;
     private bool sprintPressed;
     private bool jumpPressed;
     private Vector3 swimingPosition;
@@ -70,6 +71,7 @@ public class MovementController : RuleSystem
         {
             orginPoint = transform;
         }
+        
         CheckPlayerInput();
         GetController();
         GetAnimator();
@@ -164,6 +166,7 @@ public class MovementController : RuleSystem
             playerMoveDirection = orginPoint.TransformDirection(playerMoveDirection);
             controller.Move(playerMoveDirection * (playerSpeed * Time.deltaTime));
             transform.Rotate(new Vector3(0, rotationY * (Time.deltaTime * playerRotateSpeed), 0));
+            Camera.main.transform.Rotate(new Vector3(rotationX * (Time.deltaTime * playerRotateSpeed),0 , 0));
             yield return null;
         }
     }
@@ -176,6 +179,7 @@ public class MovementController : RuleSystem
             playerMoveDirection = orginPoint.TransformDirection(playerMoveDirection);
             controller.Move(playerMoveDirection * (playerRunningSpeed * Time.deltaTime));
             transform.Rotate(new Vector3(0, rotationY * (Time.deltaTime * playerRotateSpeed), 0));
+            Camera.main.transform.Rotate(new Vector3(rotationX * (Time.deltaTime * playerRotateSpeed),0 , 0));
             yield return null;
         }
     }
@@ -234,6 +238,7 @@ public class MovementController : RuleSystem
     {
         Vector2 lookVector = inputValue.Get<Vector2>();
         rotationY = lookVector.x;
+        rotationX = -lookVector.y;
     }
 
     private void OnJump(InputValue inputValue)
@@ -246,27 +251,24 @@ public class MovementController : RuleSystem
         sprintPressed = inputValue.Get<float>() > 0;
     }
 
+    
+
     //------------Conditions--------------
 
     public bool MovementCondition()
     {
         return (movementX != 0 || movementY != 0 || rotationY != 0) && !isSprinting && !isSwimming && !isClimbing;
     }
-
-
+    
 
     public bool SprintCondition()
     {
         return (movementX != 0 || movementY != 0 || rotationY != 0) && sprintPressed && !isSwimming && !isClimbing;
-
-
     }
 
     public bool JumpCondition()
     {
         return jumpPressed && IsGrounded();
-
-
     }
 
     public bool SwimingCondition()
