@@ -49,6 +49,9 @@ public class MovementController : RuleSystem
     [HideInInspector] public bool isFalling = false;
 
     private Vector3 playerVelocity;
+    private bool slipper;
+    private bool ball;
+    private bool fiets;
     private const float DISTTOGROUND = 0.1f;
     private const float DISTTOWATER = 1.1f;
 
@@ -262,12 +265,14 @@ public class MovementController : RuleSystem
             ray = Camera.main.ViewportPointToRay(Vector3.one * 0.5f);
             if (Physics.Raycast(ray, out rcHit, pickupDistance))
             {
-                if (rcHit.transform.CompareTag("Collectible"))
+                MovementModifier movementModifier = rcHit.transform.gameObject.GetComponent<MovementModifier>();
+                if (movementModifier != null)
                 {
-                    if (rcHit.transform.name.Equals("Bicycle") || rcHit.transform.name.Equals("Slipper") ||
-                        rcHit.transform.name.Equals("Ball"))
+                    foreach (MovementMod mod in movementModifier.modifiers)
                     {
-                        
+                        if (mod == MovementMod.FIETS) fiets = true;
+                        else if (mod == MovementMod.BAL) ball = true;
+                        else if (mod == MovementMod.SLIPPER) slipper = true;
                     }
                 }
             }
