@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_movement_modifier_8cs" kind="file" language="C#">
+    <compoundname>MovementModifier.cs</compoundname>
+    <innerclass refid="class_movement_modifier" prot="public">MovementModifier</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_movement_modifier_8cs_1a329745d2504fee12508ac1e219790b96" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>MovementMod</name>
+        <enumvalue id="_movement_modifier_8cs_1a329745d2504fee12508ac1e219790b96a1cf5c958b26f65a9389e3ad90553ae16" prot="public">
+          <name>NONCLIMABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_movement_modifier_8cs_1a329745d2504fee12508ac1e219790b96a160f2b779ffc123a89025ac647341f64" prot="public">
+          <name>SWIMMABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/MovementModifier.cs" line="11" column="7" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/MovementModifier.cs" bodystart="12" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">[AddComponentMenu(</highlight><highlight class="stringliteral">&quot;movement/movmentModifier&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="6" refid="class_movement_modifier" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_movement_modifier" kindref="compound">MovementModifier</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="class_movement_modifier_1a07d3a24fbe2aaf76997bb30e653d8d0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;MovementMod&gt;<sp/><ref refid="class_movement_modifier_1a07d3a24fbe2aaf76997bb30e653d8d0e" kindref="member">modifiers</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="_movement_modifier_8cs_1a329745d2504fee12508ac1e219790b96" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_movement_modifier_8cs_1a329745d2504fee12508ac1e219790b96" kindref="member">MovementMod</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_movement_modifier_8cs_1a329745d2504fee12508ac1e219790b96a1cf5c958b26f65a9389e3ad90553ae16" kindref="member">NONCLIMABLE</ref>,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_movement_modifier_8cs_1a329745d2504fee12508ac1e219790b96a160f2b779ffc123a89025ac647341f64" kindref="member">SWIMMABLE</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/MovementModifier.cs"/>
+  </compounddef>
+</doxygen>

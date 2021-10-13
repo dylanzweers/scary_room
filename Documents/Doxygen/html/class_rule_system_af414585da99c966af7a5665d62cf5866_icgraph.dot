@@ -1,0 +1,13 @@
+digraph "RuleSystem.SplitRules"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="RuleSystem.SplitRules",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="RuleSystem.RuleSystemCoroutine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_rule_system.html#a295d078cf416e8e1d70253f5d0f13c04",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="MovementController.Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_movement_controller.html#a6625f01290af846b3b61ea1e1432fb19",tooltip=" "];
+}

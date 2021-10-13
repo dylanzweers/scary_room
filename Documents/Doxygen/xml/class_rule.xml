@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_rule" kind="class" language="C#" prot="public">
+    <compoundname>Rule</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_rule_1a4e772bbde436fed66ad6285f09d963e1" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Rule.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <initializer>= &quot;test&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" line="11" column="20" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_rule_1a8403351210af2cbd5450651a12fbe9fa" prot="public" static="no" mutable="no">
+        <type>Func&lt; bool &gt;</type>
+        <definition>Func&lt;bool&gt; Rule.condition</definition>
+        <argsstring></argsstring>
+        <name>condition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" line="12" column="17" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_rule_1ad92b160e203699caedb90b4fea066a8a" compoundref="_rule_8cs" startline="29" endline="37">Rule</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_rule_1acc2499a39f982efb763175ffd1efda54" prot="public" static="no" mutable="no">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Rule.coroutine</definition>
+        <argsstring></argsstring>
+        <name>coroutine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" line="13" column="24" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_rule_1ad92b160e203699caedb90b4fea066a8a" compoundref="_rule_8cs" startline="29" endline="37">Rule</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_rule_1a7dac767c0be97eb6627c10a78590b133" prot="public" static="no" mutable="no">
+        <type><ref refid="class_rule_1a1bb0f2ad2eca8b681e82cd6b4dea0398" kindref="member">action</ref></type>
+        <definition>action Rule.start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" line="15" column="19" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_rule_1ad92b160e203699caedb90b4fea066a8a" compoundref="_rule_8cs" startline="29" endline="37">Rule</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_rule_1a068f3572981bf5a1f19d385693fee890" prot="public" static="no" mutable="no">
+        <type><ref refid="class_rule_1a1bb0f2ad2eca8b681e82cd6b4dea0398" kindref="member">action</ref></type>
+        <definition>action Rule.stop</definition>
+        <argsstring></argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" line="16" column="19" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_rule_1ad92b160e203699caedb90b4fea066a8a" compoundref="_rule_8cs" startline="29" endline="37">Rule</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_rule_1a6c6a52e1487ee7f4823136975d5eb498" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Rule.active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" line="17" column="17" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_rule_1a82cd9103174acf833411ab949c7ad3b2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Rule.prioriteit</definition>
+        <argsstring></argsstring>
+        <name>prioriteit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" line="18" column="16" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_rule_1ad92b160e203699caedb90b4fea066a8a" compoundref="_rule_8cs" startline="29" endline="37">Rule</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_rule_1a1bb0f2ad2eca8b681e82cd6b4dea0398" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void Rule.action</definition>
+        <argsstring>()</argsstring>
+        <name>action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" line="14" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rule_1ad92b160e203699caedb90b4fea066a8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Rule.Rule</definition>
+        <argsstring>(Func&lt; bool &gt; aCondition, IEnumerator aCoroutine, int aPrioriteit, action aStart, action aStop, String aName=&quot;rule&quot;)</argsstring>
+        <name>Rule</name>
+        <param>
+          <type>Func&lt; bool &gt;</type>
+          <declname>aCondition</declname>
+        </param>
+        <param>
+          <type>IEnumerator</type>
+          <declname>aCoroutine</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>aPrioriteit</declname>
+        </param>
+        <param>
+          <type><ref refid="class_rule_1a1bb0f2ad2eca8b681e82cd6b4dea0398" kindref="member">action</ref></type>
+          <declname>aStart</declname>
+        </param>
+        <param>
+          <type><ref refid="class_rule_1a1bb0f2ad2eca8b681e82cd6b4dea0398" kindref="member">action</ref></type>
+          <declname>aStop</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>aName</declname>
+          <defval>&quot;rule&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aConditon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Func&lt;bool&gt; the condition for the rule if this is true the rule wil be activated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aCoroutine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the coroutine that wil be started if the condition of the rule is true. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aPrioriteit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the priority of the rule. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the start function that wil be called if the condition of the rule is true. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aStop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the stop function that wil be called if the condition of the rule becomes false. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the rule. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" line="29" column="12" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" bodystart="29" bodyend="37"/>
+        <references refid="class_rule_1a8403351210af2cbd5450651a12fbe9fa" compoundref="_rule_8cs" startline="12">condition</references>
+        <references refid="class_rule_1acc2499a39f982efb763175ffd1efda54" compoundref="_rule_8cs" startline="13">coroutine</references>
+        <references refid="class_rule_1a82cd9103174acf833411ab949c7ad3b2" compoundref="_rule_8cs" startline="18">prioriteit</references>
+        <references refid="class_rule_1a7dac767c0be97eb6627c10a78590b133" compoundref="_rule_8cs" startline="15">start</references>
+        <references refid="class_rule_1a068f3572981bf5a1f19d385693fee890" compoundref="_rule_8cs" startline="16">stop</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" line="8" column="7" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" bodystart="9" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_rule_1a1bb0f2ad2eca8b681e82cd6b4dea0398" prot="public" virt="non-virtual"><scope>Rule</scope><name>action</name></member>
+      <member refid="class_rule_1a6c6a52e1487ee7f4823136975d5eb498" prot="public" virt="non-virtual"><scope>Rule</scope><name>active</name></member>
+      <member refid="class_rule_1a8403351210af2cbd5450651a12fbe9fa" prot="public" virt="non-virtual"><scope>Rule</scope><name>condition</name></member>
+      <member refid="class_rule_1acc2499a39f982efb763175ffd1efda54" prot="public" virt="non-virtual"><scope>Rule</scope><name>coroutine</name></member>
+      <member refid="class_rule_1a4e772bbde436fed66ad6285f09d963e1" prot="private" virt="non-virtual"><scope>Rule</scope><name>name</name></member>
+      <member refid="class_rule_1a82cd9103174acf833411ab949c7ad3b2" prot="public" virt="non-virtual"><scope>Rule</scope><name>prioriteit</name></member>
+      <member refid="class_rule_1ad92b160e203699caedb90b4fea066a8a" prot="public" virt="non-virtual"><scope>Rule</scope><name>Rule</name></member>
+      <member refid="class_rule_1a7dac767c0be97eb6627c10a78590b133" prot="public" virt="non-virtual"><scope>Rule</scope><name>start</name></member>
+      <member refid="class_rule_1a068f3572981bf5a1f19d385693fee890" prot="public" virt="non-virtual"><scope>Rule</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

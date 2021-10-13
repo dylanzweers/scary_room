@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_rule_system" kind="class" language="C#" prot="public">
+    <compoundname>RuleSystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <derivedcompoundref refid="class_movement_controller" prot="public" virt="non-virtual">MovementController</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_rule_system_1a1d277f5de6c0e4ee5884ec230917b234" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_rule" kindref="compound">Rule</ref> &gt;</type>
+        <definition>List&lt;Rule&gt; RuleSystem.ruleList</definition>
+        <argsstring></argsstring>
+        <name>ruleList</name>
+        <initializer>= new List&lt;<ref refid="class_rule" kindref="compound">Rule</ref>&gt; { }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" line="7" column="17" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_rule_system_1a41172795409ccf267d387fe577650f3f" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_rule" kindref="compound">Rule</ref> &gt;</type>
+        <definition>List&lt;Rule&gt; RuleSystem.activeRuleList</definition>
+        <argsstring></argsstring>
+        <name>activeRuleList</name>
+        <initializer>= new List&lt;<ref refid="class_rule" kindref="compound">Rule</ref>&gt; { }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" line="9" column="18" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_rule_system_1a10031e8609c3f6243108292d93e82ab0" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_rule" kindref="compound">Rule</ref> &gt;</type>
+        <definition>List&lt;Rule&gt; RuleSystem.nonActiveRuleList</definition>
+        <argsstring></argsstring>
+        <name>nonActiveRuleList</name>
+        <initializer>= new List&lt;<ref refid="class_rule" kindref="compound">Rule</ref>&gt; { }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" line="10" column="18" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_rule_system_1a295d078cf416e8e1d70253f5d0f13c04" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator RuleSystem.RuleSystemCoroutine</definition>
+        <argsstring>()</argsstring>
+        <name>RuleSystemCoroutine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" line="12" column="27" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" bodystart="12" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_rule_system_1af414585da99c966af7a5665d62cf5866" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RuleSystem.SplitRules</definition>
+        <argsstring>()</argsstring>
+        <name>SplitRules</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" line="24" column="10" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" bodystart="24" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rule_system_1a4e6d022aa72e5c99859a293125c967d3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RuleSystem.OrderRules</definition>
+        <argsstring>()</argsstring>
+        <name>OrderRules</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" line="41" column="10" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rule_system_1a55081db6a9067a5d067c3ef531c86d5c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RuleSystem.TurnOnRules</definition>
+        <argsstring>()</argsstring>
+        <name>TurnOnRules</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" line="47" column="10" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" bodystart="47" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rule_system_1a2aa4d052436f66e14e44b9372f3cc487" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RuleSystem.TurnOffRules</definition>
+        <argsstring>()</argsstring>
+        <name>TurnOffRules</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" line="66" column="10" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" bodystart="66" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="3">
+        <label>MovementController</label>
+        <link refid="class_movement_controller"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>RuleSystem</label>
+        <link refid="class_rule_system"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>RuleSystem</label>
+        <link refid="class_rule_system"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" line="5" column="7" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/RuleSystem.cs" bodystart="6" bodyend="84"/>
+    <listofallmembers>
+      <member refid="class_rule_system_1a41172795409ccf267d387fe577650f3f" prot="private" virt="non-virtual"><scope>RuleSystem</scope><name>activeRuleList</name></member>
+      <member refid="class_rule_system_1a10031e8609c3f6243108292d93e82ab0" prot="private" virt="non-virtual"><scope>RuleSystem</scope><name>nonActiveRuleList</name></member>
+      <member refid="class_rule_system_1a4e6d022aa72e5c99859a293125c967d3" prot="private" virt="non-virtual"><scope>RuleSystem</scope><name>OrderRules</name></member>
+      <member refid="class_rule_system_1a1d277f5de6c0e4ee5884ec230917b234" prot="public" virt="non-virtual"><scope>RuleSystem</scope><name>ruleList</name></member>
+      <member refid="class_rule_system_1a295d078cf416e8e1d70253f5d0f13c04" prot="protected" virt="non-virtual"><scope>RuleSystem</scope><name>RuleSystemCoroutine</name></member>
+      <member refid="class_rule_system_1af414585da99c966af7a5665d62cf5866" prot="private" virt="non-virtual"><scope>RuleSystem</scope><name>SplitRules</name></member>
+      <member refid="class_rule_system_1a2aa4d052436f66e14e44b9372f3cc487" prot="private" virt="non-virtual"><scope>RuleSystem</scope><name>TurnOffRules</name></member>
+      <member refid="class_rule_system_1a55081db6a9067a5d067c3ef531c86d5c" prot="private" virt="non-virtual"><scope>RuleSystem</scope><name>TurnOnRules</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

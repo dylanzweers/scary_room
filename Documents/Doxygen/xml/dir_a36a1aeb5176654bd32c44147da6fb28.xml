@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_a36a1aeb5176654bd32c44147da6fb28" kind="dir">
+    <compoundname>C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController</compoundname>
+    <innerdir refid="dir_58d1e549ce36d64e0a1e919448b3f73c">C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/"/>
+  </compounddef>
+</doxygen>

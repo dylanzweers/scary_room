@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_rule_8cs" kind="file" language="C#">
+    <compoundname>Rule.cs</compoundname>
+    <innerclass refid="class_rule" prot="public">Rule</innerclass>
+    <innernamespace refid="namespace_unity_engine_1_1_events">UnityEngine::Events</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_rule_8cs_1a42489a7a5dd72c8a67583261dbcaebd3" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>MovementAction</name>
+        <enumvalue id="_rule_8cs_1a42489a7a5dd72c8a67583261dbcaebd3a6de49bfda8068b7bc3b0c0e3d2e43134" prot="public">
+          <name>JUMPING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_rule_8cs_1a42489a7a5dd72c8a67583261dbcaebd3ab540a64cdfb940b5dcb0c773608790f9" prot="public">
+          <name>WALKNG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_rule_8cs_1a42489a7a5dd72c8a67583261dbcaebd3afc4db29e596cb9d0d1de3cdc00b982f1" prot="public">
+          <name>CLIMBING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_rule_8cs_1a42489a7a5dd72c8a67583261dbcaebd3ad1711a93fde99daa8dd0f1d8ae3a1c32" prot="public">
+          <name>SPRINTING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_rule_8cs_1a42489a7a5dd72c8a67583261dbcaebd3ad788a1d3784653e876638d5a43175ea9" prot="public">
+          <name>SWIMMING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_rule_8cs_1a42489a7a5dd72c8a67583261dbcaebd3a4f9d4539ac1e11a251e2afe022eba4e6" prot="public">
+          <name>FALLING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" line="40" column="7" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs" bodystart="41" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine.Events;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">[Serializable]</highlight></codeline>
+<codeline lineno="8" refid="class_rule" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_rule" kindref="compound">Rule</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;test&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12" refid="class_rule_1a8403351210af2cbd5450651a12fbe9fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Func&lt;bool&gt;<sp/><ref refid="class_rule_1a8403351210af2cbd5450651a12fbe9fa" kindref="member">condition</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_rule_1acc2499a39f982efb763175ffd1efda54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>IEnumerator<sp/><ref refid="class_rule_1acc2499a39f982efb763175ffd1efda54" kindref="member">coroutine</ref>;</highlight></codeline>
+<codeline lineno="14" refid="class_rule_1a1bb0f2ad2eca8b681e82cd6b4dea0398" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>delegate<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_rule_1a1bb0f2ad2eca8b681e82cd6b4dea0398" kindref="member">action</ref>();</highlight></codeline>
+<codeline lineno="15" refid="class_rule_1a7dac767c0be97eb6627c10a78590b133" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_rule_1a1bb0f2ad2eca8b681e82cd6b4dea0398" kindref="member">action</ref><sp/><ref refid="class_rule_1a7dac767c0be97eb6627c10a78590b133" kindref="member">start</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_rule_1a068f3572981bf5a1f19d385693fee890" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_rule_1a1bb0f2ad2eca8b681e82cd6b4dea0398" kindref="member">action</ref><sp/><ref refid="class_rule_1a068f3572981bf5a1f19d385693fee890" kindref="member">stop</ref>;</highlight></codeline>
+<codeline lineno="17" refid="class_rule_1a6c6a52e1487ee7f4823136975d5eb498" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_rule_1a6c6a52e1487ee7f4823136975d5eb498" kindref="member">active</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18" refid="class_rule_1a82cd9103174acf833411ab949c7ad3b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_rule_1a82cd9103174acf833411ab949c7ad3b2" kindref="member">prioriteit</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_rule_1ad92b160e203699caedb90b4fea066a8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_rule_1ad92b160e203699caedb90b4fea066a8a" kindref="member">Rule</ref>(Func&lt;bool&gt;<sp/>aCondition,<sp/>IEnumerator<sp/>aCoroutine,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>aPrioriteit,<sp/><ref refid="class_rule_1a1bb0f2ad2eca8b681e82cd6b4dea0398" kindref="member">action</ref><sp/>aStart,<sp/><ref refid="class_rule_1a1bb0f2ad2eca8b681e82cd6b4dea0398" kindref="member">action</ref><sp/>aStop,<sp/>String<sp/>aName<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;rule&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name<sp/>=<sp/>aName;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_rule_1a8403351210af2cbd5450651a12fbe9fa" kindref="member">condition</ref><sp/>=<sp/>aCondition;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_rule_1acc2499a39f982efb763175ffd1efda54" kindref="member">coroutine</ref><sp/>=<sp/>aCoroutine;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_rule_1a82cd9103174acf833411ab949c7ad3b2" kindref="member">prioriteit</ref><sp/>=<sp/>aPrioriteit;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_rule_1a7dac767c0be97eb6627c10a78590b133" kindref="member">start</ref><sp/>=<sp/>aStart;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_rule_1a068f3572981bf5a1f19d385693fee890" kindref="member">stop</ref><sp/>=<sp/>aStop;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="_rule_8cs_1a42489a7a5dd72c8a67583261dbcaebd3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_rule_8cs_1a42489a7a5dd72c8a67583261dbcaebd3" kindref="member">MovementAction</ref></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_rule_8cs_1a42489a7a5dd72c8a67583261dbcaebd3a6de49bfda8068b7bc3b0c0e3d2e43134" kindref="member">JUMPING</ref>,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_rule_8cs_1a42489a7a5dd72c8a67583261dbcaebd3ab540a64cdfb940b5dcb0c773608790f9" kindref="member">WALKNG</ref>,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_rule_8cs_1a42489a7a5dd72c8a67583261dbcaebd3afc4db29e596cb9d0d1de3cdc00b982f1" kindref="member">CLIMBING</ref>,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_rule_8cs_1a42489a7a5dd72c8a67583261dbcaebd3ad1711a93fde99daa8dd0f1d8ae3a1c32" kindref="member">SPRINTING</ref>,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_rule_8cs_1a42489a7a5dd72c8a67583261dbcaebd3ad788a1d3784653e876638d5a43175ea9" kindref="member">SWIMMING</ref>,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_rule_8cs_1a42489a7a5dd72c8a67583261dbcaebd3a4f9d4539ac1e11a251e2afe022eba4e6" kindref="member">FALLING</ref></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/Rule.cs"/>
+  </compounddef>
+</doxygen>

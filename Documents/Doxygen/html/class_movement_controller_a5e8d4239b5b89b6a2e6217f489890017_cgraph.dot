@@ -1,0 +1,26 @@
+digraph "MovementController.CreateRules"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="MovementController.Create\lRules",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="MovementController.change\lMovementFlag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_movement_controller.html#a2f34c747c9e6c68c194a7c2162293227",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="MovementController.Falling",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_movement_controller.html#a14ceaca8cf0a9dac9d2039eb12f168ea",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="MovementController.JumpCondition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_movement_controller.html#a3a9dfca795faf7c2a9717464b0f4a2b9",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="MovementController.JumpStart",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_movement_controller.html#a90eb15a5cd2a2726c665328f0c49a40f",tooltip=" "];
+  Node5 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="MovementController.Movement\lCondition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_movement_controller.html#a4d695a6393b088f44316ae7433f73584",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="MovementController.Sprint\lCondition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_movement_controller.html#a7f29e73c2215f33e29dd89a14337338c",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="MovementController.Sprinting",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_movement_controller.html#a67c34ab4a912bec0b0aaf93ab304204a",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="MovementController.Walking",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_movement_controller.html#a4a64257d241520339cad8179ee773b99",tooltip=" "];
+}

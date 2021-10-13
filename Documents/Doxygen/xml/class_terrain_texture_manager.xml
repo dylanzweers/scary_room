@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="class_terrain_texture_manager" kind="class" language="C#" prot="public">
+    <compoundname>TerrainTextureManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_terrain_texture_manager_1a08884b56ca5cee900249f4d93fc49d3b" prot="public" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform TerrainTextureManager.playerTransform</definition>
+        <argsstring></argsstring>
+        <name>playerTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" line="8" column="22" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_terrain_texture_manager_1ae1d01d988c7dcdf4836d2e5281297f1d" compoundref="_terrain_texture_manager_8cs" startline="23" endline="27">GetTerrainTexture</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_terrain_texture_manager_1a6716c53317cd1553a7d2b6aa4e7b7dda" prot="public" static="no" mutable="no">
+        <type>float[]</type>
+        <definition>float [] TerrainTextureManager.textureValues</definition>
+        <argsstring></argsstring>
+        <name>textureValues</name>
+        <initializer>= { 0, 0, 0, 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" line="13" column="18" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_terrain_texture_manager_1a0e010e27bc4b3eb019cc6e768910fff0" prot="private" static="no" mutable="no">
+        <type>Terrain</type>
+        <definition>Terrain TerrainTextureManager.t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" line="9" column="21" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_terrain_texture_manager_1af38868fa14987cbd400f82e4bc05c6dd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TerrainTextureManager.posX</definition>
+        <argsstring></argsstring>
+        <name>posX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" line="11" column="17" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_terrain_texture_manager_1a1b4fa88dab389a36a44dad7df862b351" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TerrainTextureManager.posZ</definition>
+        <argsstring></argsstring>
+        <name>posZ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" line="12" column="17" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_terrain_texture_manager_1aa431d6176ab67e372c01854d12d39787" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TerrainTextureManager.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" line="15" column="10" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" bodystart="15" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_terrain_texture_manager_1a1363bb187d88d1fd2905ac174f4ea487" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TerrainTextureManager.ConvertPosition</definition>
+        <argsstring>(Vector3 playerPosition)</argsstring>
+        <name>ConvertPosition</name>
+        <param>
+          <type>Vector3</type>
+          <declname>playerPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" line="29" column="10" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" bodystart="29" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_terrain_texture_manager_1a7645401200b1595a6dfea62783dc7307" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TerrainTextureManager.CheckTexture</definition>
+        <argsstring>()</argsstring>
+        <name>CheckTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" line="47" column="10" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" bodystart="47" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_terrain_texture_manager_1a58611a5bb5040ccd4398d6054e75e837" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Terrain</type>
+        <definition>Terrain TerrainTextureManager.GetClosestCurrentTerrain</definition>
+        <argsstring>(Vector3 playerPos)</argsstring>
+        <name>GetClosestCurrentTerrain</name>
+        <param>
+          <type>Vector3</type>
+          <declname>playerPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" line="63" column="13" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" bodystart="63" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_terrain_texture_manager_1a1b25474d787cbf60cbc4145d17d0aa55" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3</type>
+        <definition>Vector3 TerrainTextureManager.GetTerainCenter</definition>
+        <argsstring>(Terrain terrain)</argsstring>
+        <name>GetTerainCenter</name>
+        <param>
+          <type>Terrain</type>
+          <declname>terrain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" line="97" column="13" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" bodystart="97" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_terrain_texture_manager_1ae1d01d988c7dcdf4836d2e5281297f1d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TerrainTextureManager.GetTerrainTexture</definition>
+        <argsstring>()</argsstring>
+        <name>GetTerrainTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" line="23" column="17" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" bodystart="23" bodyend="27"/>
+        <references refid="class_terrain_texture_manager_1a08884b56ca5cee900249f4d93fc49d3b" compoundref="_terrain_texture_manager_8cs" startline="8">playerTransform</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>TerrainTextureManager</label>
+        <link refid="class_terrain_texture_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>TerrainTextureManager</label>
+        <link refid="class_terrain_texture_manager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" line="6" column="7" bodyfile="C:/Users/dylan/unityProjects/sep2021-character-controller-in-terrain/CharacterController/Assets/Scripts/TerrainTextureManager.cs" bodystart="7" bodyend="103"/>
+    <listofallmembers>
+      <member refid="class_terrain_texture_manager_1a7645401200b1595a6dfea62783dc7307" prot="private" virt="non-virtual"><scope>TerrainTextureManager</scope><name>CheckTexture</name></member>
+      <member refid="class_terrain_texture_manager_1a1363bb187d88d1fd2905ac174f4ea487" prot="private" virt="non-virtual"><scope>TerrainTextureManager</scope><name>ConvertPosition</name></member>
+      <member refid="class_terrain_texture_manager_1a58611a5bb5040ccd4398d6054e75e837" prot="private" virt="non-virtual"><scope>TerrainTextureManager</scope><name>GetClosestCurrentTerrain</name></member>
+      <member refid="class_terrain_texture_manager_1a1b25474d787cbf60cbc4145d17d0aa55" prot="private" virt="non-virtual"><scope>TerrainTextureManager</scope><name>GetTerainCenter</name></member>
+      <member refid="class_terrain_texture_manager_1ae1d01d988c7dcdf4836d2e5281297f1d" prot="public" virt="non-virtual"><scope>TerrainTextureManager</scope><name>GetTerrainTexture</name></member>
+      <member refid="class_terrain_texture_manager_1a08884b56ca5cee900249f4d93fc49d3b" prot="public" virt="non-virtual"><scope>TerrainTextureManager</scope><name>playerTransform</name></member>
+      <member refid="class_terrain_texture_manager_1af38868fa14987cbd400f82e4bc05c6dd" prot="private" virt="non-virtual"><scope>TerrainTextureManager</scope><name>posX</name></member>
+      <member refid="class_terrain_texture_manager_1a1b4fa88dab389a36a44dad7df862b351" prot="private" virt="non-virtual"><scope>TerrainTextureManager</scope><name>posZ</name></member>
+      <member refid="class_terrain_texture_manager_1a0e010e27bc4b3eb019cc6e768910fff0" prot="private" virt="non-virtual"><scope>TerrainTextureManager</scope><name>t</name></member>
+      <member refid="class_terrain_texture_manager_1a6716c53317cd1553a7d2b6aa4e7b7dda" prot="public" virt="non-virtual"><scope>TerrainTextureManager</scope><name>textureValues</name></member>
+      <member refid="class_terrain_texture_manager_1aa431d6176ab67e372c01854d12d39787" prot="private" virt="non-virtual"><scope>TerrainTextureManager</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
