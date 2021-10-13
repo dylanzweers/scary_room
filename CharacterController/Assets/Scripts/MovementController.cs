@@ -25,7 +25,8 @@ public class MovementController : RuleSystem
     public float gravityForce = -9.81f;
 
     public Transform orginPoint;
-    [Range(0.5f, 2f)] public float pickupDistance = 1f;
+    [Range(0.5f, 15f)] public float pickupDistance = 1f;
+    [Range(0.5f, 1f)] public float Sensitivity = 0.8f;
 
     private CharacterController controller;
     private Animator animator;
@@ -39,6 +40,12 @@ public class MovementController : RuleSystem
     private Vector3 swimingPosition;
     private RaycastHit rcHit;
     private Ray ray;
+    private Rect rect1;
+    private Rect rect2;
+    private Rect rect3;
+    private Texture fiets;
+    private Texture sandaal;
+    private Texture bal;
 
 
     [HideInInspector] public bool isClimbing = false;
@@ -51,7 +58,7 @@ public class MovementController : RuleSystem
     private Vector3 playerVelocity;
     private bool slipper;
     private bool ball;
-    private bool fiets;
+    private bool bicycle;
     private const float DISTTOGROUND = 0.1f;
     private const float DISTTOWATER = 1.1f;
 
@@ -73,6 +80,17 @@ public class MovementController : RuleSystem
 
     void Start()
     {
+        var offset = 128;
+        float size = Screen.width * 0.05f;
+        rect1 = new Rect(Screen.width / 2 - offset - size / 2, Screen.height * 0.7f, size, size);
+        fiets = Resources.Load("Icons/Fiets") as Texture;
+        
+        rect2 = new Rect(Screen.width / 2 - size / 2, Screen.height * 0.7f, size, size);
+        bal = Resources.Load("Icons/Ball") as Texture;
+        
+        rect3 = new Rect(Screen.width / 2 + offset - size / 2, Screen.height * 0.7f, size, size);
+        sandaal = Resources.Load("Icons/Sandal") as Texture;
+
         if (orginPoint == null)
         {
             orginPoint = transform;
@@ -171,8 +189,8 @@ public class MovementController : RuleSystem
             playerMoveDirection = new Vector3(movementX, 0, movementY);
             playerMoveDirection = orginPoint.TransformDirection(playerMoveDirection);
             controller.Move(playerMoveDirection * (playerSpeed * Time.deltaTime));
-            transform.Rotate(new Vector3(0, rotationY * (Time.deltaTime * playerRotateSpeed), 0));
-            Camera.main.transform.Rotate(new Vector3(rotationX * (Time.deltaTime * playerRotateSpeed),0 , 0));
+            transform.Rotate(new Vector3(0, rotationY * (Time.deltaTime * playerRotateSpeed) * Sensitivity, 0));
+            Camera.main.transform.Rotate(new Vector3(rotationX * (Time.deltaTime * playerRotateSpeed) * Sensitivity,0 , 0));
             yield return null;
         }
     }
@@ -184,8 +202,8 @@ public class MovementController : RuleSystem
             playerMoveDirection = new Vector3(movementX, 0, movementY);
             playerMoveDirection = orginPoint.TransformDirection(playerMoveDirection);
             controller.Move(playerMoveDirection * (playerRunningSpeed * Time.deltaTime));
-            transform.Rotate(new Vector3(0, rotationY * (Time.deltaTime * playerRotateSpeed), 0));
-            Camera.main.transform.Rotate(new Vector3(rotationX * (Time.deltaTime * playerRotateSpeed),0 , 0));
+            transform.Rotate(new Vector3(0, rotationY * (Time.deltaTime * playerRotateSpeed) * Sensitivity, 0));
+            Camera.main.transform.Rotate(new Vector3(rotationX * (Time.deltaTime * playerRotateSpeed) * Sensitivity,0 , 0));
             yield return null;
         }
     }
@@ -265,20 +283,45 @@ public class MovementController : RuleSystem
             ray = Camera.main.ViewportPointToRay(Vector3.one * 0.5f);
             if (Physics.Raycast(ray, out rcHit, pickupDistance))
             {
-                MovementModifier movementModifier = rcHit.transform.gameObject.GetComponent<MovementModifier>();
-                if (movementModifier != null)
+                if (rcHit.transform.CompareTag("Collectible"))
                 {
-                    foreach (MovementMod mod in movementModifier.modifiers)
+                    var child = rcHit.transform.GetChild(0);
+                    child.gameObject.SetActive(true);
+                    MovementModifier movementModifier =
+                        child.gameObject.GetComponent<MovementModifier>();
+                    if (movementModifier != null)
                     {
-                        if (mod == MovementMod.FIETS) fiets = true;
-                        else if (mod == MovementMod.BAL) ball = true;
-                        else if (mod == MovementMod.SLIPPER) slipper = true;
+                        foreach (MovementMod mod in movementModifier.modifiers)
+                        {
+                            if (mod == MovementMod.FIETS) bicycle = true;
+                            else if (mod == MovementMod.BAL) ball = true;
+                            else if (mod == MovementMod.SLIPPER) slipper = true;
+                        }
                     }
+                    Destroy(child.gameObject, 1f);
                 }
             }
         }
     }
+
+    private void OnGUI()
+    {
+        if (slipper)
+        {
+            GUI.DrawTexture(rect1, sandaal);
+        }
     
+        if (ball)
+        {
+            GUI.DrawTexture(rect2, bal);
+        }
+    
+        if (bicycle)
+        {
+            GUI.DrawTexture(rect3, fiets);
+        }
+    }
+
 
     //------------Conditions--------------
 
