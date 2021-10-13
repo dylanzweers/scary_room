@@ -29,10 +29,8 @@ public class AgentController : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        Debug.Log("humping");
         Vector3 resetPos = new Vector3(0,0,0);
         if (col.CompareTag("Player")) {
-            Debug.Log("trying");
             target.position = resetPos;
         }
     }
