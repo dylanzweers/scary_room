@@ -60,8 +60,8 @@ public class MovementController : RuleSystem
         ruleList.Add(new Rule(SprintCondition, Sprinting(), 2, () => changeMovementFlag(MovementAction.SPRINTING, true), () => changeMovementFlag(MovementAction.SPRINTING, false), "sprinting rule"));
         ruleList.Add(new Rule(JumpCondition, null, 3, () => JumpStart(), () => changeMovementFlag(MovementAction.JUMPING, false), "jumping rule"));
         ruleList.Add(new Rule(FallingCondition, Falling(), 3, () => changeMovementFlag(MovementAction.FALLING, true), () => changeMovementFlag(MovementAction.FALLING, false), "falling rule"));
-        ruleList.Add(new Rule(SwimingCondition, Swimming(), 1, () => changeMovementFlag(MovementAction.SWIMMING, true), () => changeMovementFlag(MovementAction.SWIMMING, false), "swiming rule"));
-        ruleList.Add(new Rule(ClimbingCondition, Climbing(), 1, () => changeMovementFlag(MovementAction.CLIMBING, true), () => changeMovementFlag(MovementAction.CLIMBING, false), "climbing rule"));
+       // ruleList.Add(new Rule(SwimingCondition, Swimming(), 1, () => changeMovementFlag(MovementAction.SWIMMING, true), () => changeMovementFlag(MovementAction.SWIMMING, false), "swiming rule"));
+       // ruleList.Add(new Rule(ClimbingCondition, Climbing(), 1, () => changeMovementFlag(MovementAction.CLIMBING, true), () => changeMovementFlag(MovementAction.CLIMBING, false), "climbing rule"));
     }
 
     void Start()

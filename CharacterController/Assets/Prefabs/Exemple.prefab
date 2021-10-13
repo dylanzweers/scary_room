@@ -3157,7 +3157,7 @@ GameObject:
   - component: {fileID: 3134114933519245434}
   - component: {fileID: 8796666162326082724}
   - component: {fileID: 8796666162326082725}
-  - component: {fileID: 7126635384102838541}
+  - component: {fileID: 4724638905689315850}
   m_Layer: 0
   m_Name: Exemple
   m_TagString: Untagged
@@ -3258,7 +3258,7 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &7126635384102838541
+--- !u!114 &4724638905689315850
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3271,33 +3271,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ruleList:
-  - name: walking rule
-    active: 0
+  - active: 0
     prioriteit: 1
-  - name: sprinting rule
-    active: 0
+  - active: 0
     prioriteit: 2
-  - name: jumping rule
-    active: 0
+  - active: 0
     prioriteit: 3
-  - name: falling rule
-    active: 0
+  - active: 0
     prioriteit: 3
-  - name: swiming rule
-    active: 0
-    prioriteit: 1
-  - name: climbing rule
-    active: 0
-    prioriteit: 1
-  PlayerSpeed: 5
-  PlayerRunningSpeed: 10
-  PlayerGravity: 3
+  playerSpeed: 5
+  playerRunningSpeed: 10
   playerRotateSpeed: 5
   playerJumpHeight: 5
-  GravityForce: -9.81
-  PlayerSwimmingSpeed: 2
-  PlayerSwimmingRotationSpeed: 2
-  MaxClimbingIncline: 90
+  playerSwimmingSpeed: 4
+  playerSwimmingRotationSpeed: 2
+  gravityForce: -9.81
   orginPoint: {fileID: 0}
   isClimbing: 0
   isJumping: 0
@@ -3305,9 +3293,6 @@ MonoBehaviour:
   isSprinting: 0
   isSwimming: 0
   isFalling: 0
-  playerVelocity: {x: 0, y: 0, z: 0}
-  distToGround: 0.1
-  distToWater: 1.1
 --- !u!1 &8796666162322991046
 GameObject:
   m_ObjectHideFlags: 0
