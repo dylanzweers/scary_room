@@ -25,7 +25,8 @@ public class MovementController : RuleSystem
     public float gravityForce = -9.81f;
 
     public Transform orginPoint;
-    
+    [Range(0.5f, 2f)] public float pickupDistance = 1f;
+
     private CharacterController controller;
     private Animator animator;
     private Vector3 playerMoveDirection;
@@ -36,6 +37,8 @@ public class MovementController : RuleSystem
     private bool sprintPressed;
     private bool jumpPressed;
     private Vector3 swimingPosition;
+    private RaycastHit rcHit;
+    private Ray ray;
 
 
     [HideInInspector] public bool isClimbing = false;
@@ -251,6 +254,25 @@ public class MovementController : RuleSystem
         sprintPressed = inputValue.Get<float>() > 0;
     }
 
+    private void OnFire(InputValue inputValue)
+    {
+        bool clicking = inputValue.Get<float>() > 0;
+        if (clicking)
+        {
+            ray = Camera.main.ViewportPointToRay(Vector3.one * 0.5f);
+            if (Physics.Raycast(ray, out rcHit, pickupDistance))
+            {
+                if (rcHit.transform.CompareTag("Collectible"))
+                {
+                    if (rcHit.transform.name.Equals("Bicycle") || rcHit.transform.name.Equals("Slipper") ||
+                        rcHit.transform.name.Equals("Ball"))
+                    {
+                        
+                    }
+                }
+            }
+        }
+    }
     
 
     //------------Conditions--------------
