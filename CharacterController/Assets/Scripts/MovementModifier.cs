@@ -11,6 +11,9 @@ public class MovementModifier : MonoBehaviour
 public enum MovementMod
 {
     NONCLIMABLE,
-    SWIMMABLE
+    SWIMMABLE,
+    FIETS,
+    SLIPPER,
+    BAL
 }
 
