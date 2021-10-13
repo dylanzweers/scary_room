@@ -37,7 +37,7 @@ public class AgentController : MonoBehaviour
         {
             col.gameObject.SetActive(false);
 
-            loseMessage = String.Format("You Lost");
+            loseMessage = String.Format("You should have played the game");
 
         }
     }

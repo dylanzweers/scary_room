@@ -46,6 +46,8 @@ public class MovementController : RuleSystem
     private Texture fiets;
     private Texture sandaal;
     private Texture bal;
+    private string winMessage;
+    private bool winCondition;
 
 
     [HideInInspector] public bool isClimbing = false;
@@ -95,7 +97,10 @@ public class MovementController : RuleSystem
         {
             orginPoint = transform;
         }
+
         
+        winMessage = String.Format("You finished the game!");
+
         CheckPlayerInput();
         GetController();
         GetAnimator();
@@ -299,6 +304,12 @@ public class MovementController : RuleSystem
                         }
                     }
                     Destroy(child.gameObject, 1f);
+                } 
+                if (rcHit.transform.CompareTag("Door") && bicycle && ball && slipper)
+                {
+                    winCondition = true;
+                    gameObject.GetComponent<PlayerInput>().enabled = false;
+                    GameObject.Find("Enemy").SetActive(false);
                 }
             }
         }
@@ -319,6 +330,11 @@ public class MovementController : RuleSystem
         if (bicycle)
         {
             GUI.DrawTexture(rect3, fiets);
+        }
+
+        if (winCondition)
+        {
+            GUI.Label(new Rect(325, 150, 300, 30), winMessage, "box");
         }
     }
 
